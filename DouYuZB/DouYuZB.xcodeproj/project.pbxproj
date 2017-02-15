@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EF6824E81E53E54600CBB6A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6824E71E53E54600CBB6A0 /* AppDelegate.swift */; };
-		EF6824EA1E53E54600CBB6A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6824E91E53E54600CBB6A0 /* ViewController.swift */; };
 		EF6824ED1E53E54600CBB6A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6824EB1E53E54600CBB6A0 /* Main.storyboard */; };
 		EF6824EF1E53E54600CBB6A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6824EE1E53E54600CBB6A0 /* Assets.xcassets */; };
 		EF6824F21E53E54600CBB6A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6824F01E53E54600CBB6A0 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		EF6824E41E53E54600CBB6A0 /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6824E71E53E54600CBB6A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF6824E91E53E54600CBB6A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF6824EC1E53E54600CBB6A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF6824EE1E53E54600CBB6A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF6824F11E53E54600CBB6A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,69 @@
 		EF6824E61E53E54600CBB6A0 /* DouYuZB */ = {
 			isa = PBXGroup;
 			children = (
+				EF6824F91E53F2EC00CBB6A0 /* Classes */,
 				EF6824E71E53E54600CBB6A0 /* AppDelegate.swift */,
-				EF6824E91E53E54600CBB6A0 /* ViewController.swift */,
 				EF6824EB1E53E54600CBB6A0 /* Main.storyboard */,
 				EF6824EE1E53E54600CBB6A0 /* Assets.xcassets */,
 				EF6824F01E53E54600CBB6A0 /* LaunchScreen.storyboard */,
 				EF6824F31E53E54600CBB6A0 /* Info.plist */,
 			);
 			path = DouYuZB;
+			sourceTree = "<group>";
+		};
+		EF6824F91E53F2EC00CBB6A0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF6824FA1E53F2EC00CBB6A0 /* Follow */,
+				EF6824FB1E53F2EC00CBB6A0 /* Home */,
+				EF6824FC1E53F2EC00CBB6A0 /* Live */,
+				EF6824FD1E53F2EC00CBB6A0 /* Main */,
+				EF6824FE1E53F2EC00CBB6A0 /* Profile */,
+				EF6824FF1E53F2EC00CBB6A0 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EF6824FA1E53F2EC00CBB6A0 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		EF6824FB1E53F2EC00CBB6A0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF6824FC1E53F2EC00CBB6A0 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		EF6824FD1E53F2EC00CBB6A0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EF6824FE1E53F2EC00CBB6A0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EF6824FF1E53F2EC00CBB6A0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6824EA1E53E54600CBB6A0 /* ViewController.swift in Sources */,
 				EF6824E81E53E54600CBB6A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +301,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = DouYuZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hjai.DouYuZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,7 +314,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = DouYuZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hjai.DouYuZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
