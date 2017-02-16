@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K5j-Az-swY">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Rio-bp-46F">
+            <objects>
+                <viewController id="CqK-ZA-TJf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oiW-WO-VNr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kpv-2b-kYS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XKG-Mb-Eea">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XrD-x3-YPg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMF-oy-uP3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789" y="840"/>
+        </scene>
+        <!--关注-->
+        <scene sceneID="jc3-yn-Zxk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K5j-Az-swY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="关注" image="btn_live_normal" selectedImage="btn_live_selected" id="4at-Ov-UCt"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Lw-AM-6ym">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CqK-ZA-TJf" kind="relationship" relationship="rootViewController" id="ujy-yo-gAI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QGZ-L2-nfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="848"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_live_normal" width="30" height="24"/>
+        <image name="btn_live_selected" width="30" height="24"/>
+    </resources>
+</document>
